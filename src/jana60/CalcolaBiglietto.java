@@ -27,7 +27,7 @@ public class CalcolaBiglietto {
 		System.out.println("Et‡ del passeggero: " + et‡Passeggero + " anni");
 		
 		//calcolatore biglietto
-		double prezzoAlKm = 0.21;
+		float prezzoAlKm = 0.21f;
 		double prezzoBiglietto = prezzoAlKm * numeroKm;
 		double prezzoBigliettoMinorenni = prezzoBiglietto * 80/100;
 		double prezzoBigliettoAnziani = prezzoBiglietto * 60/100;
@@ -44,6 +44,7 @@ public class CalcolaBiglietto {
 			System.out.println("Il valore et‡ inserito non Ë corretto");
 		}
 		
+		scan.close();
 	}
 
 }
