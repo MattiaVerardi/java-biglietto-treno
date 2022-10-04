@@ -1,5 +1,6 @@
 package jana60;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 //Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero. 
@@ -13,6 +14,7 @@ public class CalcolaBiglietto {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("'€' 0.00");
 
 		int numeroKm;
 		int etaPasseggero;
@@ -37,7 +39,7 @@ public class CalcolaBiglietto {
 			prezzoFinale = prezzoBiglietto;
 		}
 
-		System.out.println("Il costo del biglietto è di " + prezzoFinale);
+		System.out.println("Il costo del biglietto è di " + df.format(prezzoFinale));
 
 		scan.close();
 
